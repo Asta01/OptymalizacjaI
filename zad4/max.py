@@ -35,7 +35,7 @@ print 'UWAGA: Program zaklada, ze:'
 print '1. Wprowadzany problem jest juz w postaci normalnej (ograniczenia maja postac Ax<=b, zas x>=0);'
 print '2. Przestrzen, na ktorej badamy funkcje jest ograniczonym wieloscianem;'
 print '3. Podana funkcje MAKSYMALIZUJEMY (jesli chcemy minimalizowac, nalezy wpisac wspolczynniki o przeciwnych znakach)'
-print '4. Program podaje jedno rozwiaza'
+print '4. Program podaje jedno rozwiazanie - nie wszystkie'
 
 liczba_zmiennych = int(raw_input('Podaj liczbe zmiennych: '))
 
@@ -87,7 +87,6 @@ for columns in get_possible_columns(liczba_zmiennych, liczba_ograniczen):
             if c.dot(V) > maxV:
                 maxV = c.dot(V)
                 maxX = V[:liczba_zmiennych]
-
 
 print ('Funkcja przyjmuje maksimum w punkcie: ' + str(maxX))
 print ('Maksimum funkcji wynosi ' + str(maxV))
