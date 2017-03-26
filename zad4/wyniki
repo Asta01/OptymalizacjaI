@@ -29,7 +29,11 @@ Dla problemu z zadania 3a z lab 2
         obj = 5.57142857142857
         {"x1":2.4285714285714284,"x2":0.8571428571428571}
 
-Dla problemu
+Uwaga: wprowadzany problem powinien być w postaci normalnej (program szuka tylko dodatnich wartości zmiennych spełniających maksimum)
+       Jeśli zbiór ograniczeń będzie narzucał ujemne wartości zmiennych, to program wyrzuci wynik:
+       'Nie istnieja nieujemne wartosci zmiennych, bedace rozwiazaniem problemu.'
+     
+Przykład:
 
         Maksymalizuj
         x1 + x2
@@ -41,7 +45,7 @@ Dla problemu
         Nie istnieja nieujemne wartosci zmiennych, bedace rozwiazaniem problemu.
         (ponieważ problem nie został sprowadzony do postaci normalnej przed wpisaniem go do programu)
 
-  lub (w przypadku wpisania problemu w postaci normalnej):
+   (w przypadku wpisania problemu w postaci normalnej):
 
         Maksymalizuj
         x1 - x2 + x3 - x4
