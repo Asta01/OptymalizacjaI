@@ -35,7 +35,7 @@ print 'UWAGA: Program zaklada, ze:'
 print '1. Wprowadzany problem jest juz w postaci normalnej (ograniczenia maja postac Ax<=b, zas x>=0);'
 print '2. Przestrzen, na ktorej badamy funkcje jest ograniczonym wieloscianem;'
 print '3. Podana funkcje MAKSYMALIZUJEMY (jesli chcemy minimalizowac, nalezy wpisac wspolczynniki o przeciwnych znakach)'
-print '4. Program podaje jedno rozwiazanie - nie wszystkie'
+print '4. Program podaje jedno rozwiazanie, nie wszystkie'
 
 liczba_zmiennych = int(raw_input('Podaj liczbe zmiennych: '))
 
@@ -70,7 +70,7 @@ A = numpy.array(A)
 b = numpy.array(b)
 c = numpy.array(c)
 
-maxV = 0
+maxV = float('-inf')
 maxX = []
 for columns in get_possible_columns(liczba_zmiennych, liczba_ograniczen):
     a = None
@@ -84,9 +84,12 @@ for columns in get_possible_columns(liczba_zmiennych, liczba_ograniczen):
             for i in columns:
                 V[i] = v[j]
                 j += 1
-            if c.dot(V) > maxV:
+            if c.dot(V) >= maxV:
                 maxV = c.dot(V)
                 maxX = V[:liczba_zmiennych]
 
-print ('Funkcja przyjmuje maksimum w punkcie: ' + str(maxX))
-print ('Maksimum funkcji wynosi ' + str(maxV))
+if maxX == []:
+    print 'Nie istnieja nieujemne wartosci zmiennych, bedace rozwiazaniem problemu.'
+else:
+    print ('Funkcja przyjmuje maksimum w punkcie: ' + str(maxX))
+    print ('Maksimum funkcji wynosi ' + str(maxV))
