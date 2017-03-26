@@ -1,31 +1,55 @@
 Dla problemu z zadania 4 z lab 3
 
-Maksymalizuj x1+x2
-przy ograniczeniach
-−x1+x2≤1
-x1≤3
-x2≤2
+        Maksymalizuj x1+x2
+        przy ograniczeniach
+        −x1+x2≤1
+        x1≤3
+        x2≤2
 
-wynik wyniósł:
-Funkcja przyjmuje maksimum w punkcie: [3.0, 2.0]
-Maksimum funkcji wynosi 5.0
-Solwer problemów liniowych podał wynik:
-obj = 5
-{"x1":3,"x2":2}
+      wynik wyniósł:
+        Funkcja przyjmuje maksimum w punkcie: [3.0, 2.0]
+        Maksimum funkcji wynosi 5.0
+      Solwer problemów liniowych podał wynik:
+        obj = 5
+        {"x1":3,"x2":2}
 
 Dla problemu z zadania 3a z lab 2
 
-Maksymalizuj 
-3x1−2x2
-przy ograniczeniach
-2x1−x2≤4
-x1+3x2≥5
-x2≥0.
+        Maksymalizuj 
+        3x1−2x2
+        przy ograniczeniach
+        2x1−x2≤4
+        x1+3x2≥5
+        x2≥0.
 
-wynik wyniósł:
-Funkcja przyjmuje maksimum w punkcie: [2.4285714285714288, 0.85714285714285698]
-Maksimum funkcji wynosi 5.57142857143
-Solwer problemów liniowych podał wynik:
-obj = 5.57142857142857
-{"x1":2.4285714285714284,"x2":0.8571428571428571}
+      wynik wyniósł:
+        Funkcja przyjmuje maksimum w punkcie: [2.4285714285714288, 0.85714285714285698]
+        Maksimum funkcji wynosi 5.57142857143
+      Solwer problemów liniowych podał wynik:
+        obj = 5.57142857142857
+        {"x1":2.4285714285714284,"x2":0.8571428571428571}
 
+Dla problemu
+
+        Maksymalizuj
+        x1 + x2
+        przy ograniczeniach
+        x1 <= -1
+        x2 <= -2
+        
+      wynik wyniósł:
+        Nie istnieja nieujemne wartosci zmiennych, bedace rozwiazaniem problemu.
+        (ponieważ problem nie został sprowadzony do postaci normalnej przed wpisaniem go do programu)
+
+  lub (w przypadku wpisania problemu w postaci normalnej):
+
+        Maksymalizuj
+        x1 - x2 + x3 - x4
+        przy ograniczeniach
+        x1 - x2 <= -1
+        x3 - x4 <= -2
+        
+      wynik wyniósł:
+        Funkcja przyjmuje maksimum w punkcie: [0, 1.0, 0, 2.0]
+        Maksimum funkcji wynosi -3.0
+        (co oznacza, że w początkowym problemie wynik wynosi x1=-1,x2=-2 oraz maxf=-3)
