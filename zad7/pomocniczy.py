@@ -1,3 +1,5 @@
+import parser
+
 p = MixedIntegerLinearProgram(maximization=False)
 v = p.new_variable(real=True, nonnegative=True)
 
