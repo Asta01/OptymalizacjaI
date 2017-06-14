@@ -1,0 +1,46 @@
+\* Furniture Manufacturing Problem *\
+Maximize
+OBJ: 100 Number_of_Chairs_A + 150 Number_of_Chairs_B
+Subject To
+capacity_of_Lathe: Number_of_Chairs_A + 2 Number_of_Chairs_B <= 40
+capacity_of_Polisher: 3 Number_of_Chairs_A + 1.5 Number_of_Chairs_B <= 48
+End
+
+
+    lexicographical_min:
+
+        Number of pivot steps:  2
+        32000000.0
+        (8.0, 16.0)
+
+    lexicographical_max:
+
+        Number of pivot steps:  2
+        32000000.0
+        (8.0, 16.0)
+
+    largest_coefficient:
+
+        [1000000.0, 1500000.0]
+        [x1, x2]
+        [x1, x2]
+        [x1, x2]
+        [1000000.0, 1500000.0]
+        x1
+        x2
+        x2
+        [1000000.0, 1500000.0]
+        [x1, x2]
+        [x1, x2]
+        [x3]
+        [-1.00000000000000e30, -1.00000000000000e30]
+        None
+        Number of pivot steps:  1
+        0
+        (8.0, 16.0)
+
+    random_edge:
+
+        Number of pivot steps:  2
+        32000000.0
+        (8.0, 16.0)
