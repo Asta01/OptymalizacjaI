@@ -88,7 +88,6 @@ def largest_coefficient_leaving(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == max(coef):
                     lcl = x
             i += 1
@@ -103,7 +102,6 @@ def largest_coefficient_leaving(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == min(coef):
                     lcl = x
             i += 1
@@ -135,7 +133,6 @@ def smallest_coefficient_entering(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == min(coef):
                     sce = x
             i += 1
@@ -150,7 +147,6 @@ def smallest_coefficient_entering(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == max(coef):
                     sce = x
             i += 1
@@ -180,7 +176,6 @@ def smallest_coefficient_leaving(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == max(coef):
                     scl = x
             i += 1
@@ -195,7 +190,6 @@ def smallest_coefficient_leaving(self):
         print coef
         for x in var:
             if x in pvar and x in dvar:
-                print x
                 if coef[i] == min(coef):
                     scl = x
             i += 1
@@ -203,7 +197,6 @@ def smallest_coefficient_leaving(self):
     return scl
 
 # 5. RANDOM EDGE
-# działa
 
 import random
 
@@ -213,31 +206,16 @@ def random_edge_entering(self):
 def random_edge_leaving(self):
     return random.choice(self.possible_leaving())
 
-# 5. LARGEST INCREASE
-
-def largest_increase_entering(self):
-    return 0
-def largest_increase_leaving(self):
-    return 0
-
-# 6. SMALLEST INCREASE
-# 7. BLAND'S RULE
-
-def blands_rule_entering(self):
-    return 0
-
-def blands_rule_leaving(self):
-    return 0
 
 #
 # Wybor funkcji pivot
 #
 
 def my_entering(self):
-    return lexicographical_min_entering(self)
+    return largest_coefficient_entering(self)
 
 def my_leaving(self):
-    return lexicographical_min_leaving(self)
+    return largest_coefficient_leaving(self)
 
 #
 # Definicja problemu
